@@ -40,8 +40,9 @@ ul#dropdown1 a {
 
 
 #contact {
-  position: relative ;
-  right: 20px;
+  position: fixed ;
+  right: 25px;
+  font-size: 16px;
 }
 
 

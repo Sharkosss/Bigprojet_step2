@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
         <nav>
             <div class="nav-wrapper #212121 grey darken-4" id="nav">
                 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <a href="contact.php" class="right hide-on-med-and-down" id="contact">Contact</a>
+                <a href="index.php" class="brand-logo right" id="contact">Acceuil</a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="cv.php">CV</a></li>
