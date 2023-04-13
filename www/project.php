@@ -37,15 +37,27 @@
 
       <div class="">
         <div class="navbar colornav navbar-fixed">
-          <nav> 
-              <div class="nav-wrapper colornav accent-2 ">
+          <nav>
+            <div class="nav-wrapper #212121 grey darken-4" id="nav">
                 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="index.php">Accueil</a></li>
-                </ul>
-              </div>
-            
-            </nav>
+                <a href="contact.php" class="right hide-on-med-and-down" id="contact">Contact</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="cv.php">CV</a></li>
+                    <li>
+                        <a class="dropdown-trigger" data-beloworigin="true" href="#!" data-target="dropdown1">
+                            Jeux<i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-trigger" data-beloworigin="true" href="#!" data-target="dropdown2">
+                            Projects<i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+        
+                </ul>       
+            </div>
+          </nav>
         </div>
           <ul id="slide-out" class="sidenav">
             <li><div class="user-view">
@@ -56,27 +68,70 @@
               <a href="#name"><span class="white-text name"><?php echo $project["nomintervenant"]?></span></a>
               <a href="#email"><span class="white-text email"><a href="<?php echo $project["linkedinhttps"]?>"><?php echo $project["linkedin"]?></a></span></a>
             </div></li>
-            <li><a href="#presentation">Présentation du projet</a></li>
-            <li><a href="#contained">Contenu</a></li>
-            <li><div class="divider"></div></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#return">Notre retour</a></li>
-            <li><div class="divider"></div></li>
             <li><a href="index.php">Acceuil</a></li>
-            <?php
-            $sql = "SELECT * FROM projects";
-            $pre = $pdo_projects-> prepare($sql);
-            $pre->execute();
-            $projects = $pre->fetchall(PDO::FETCH_ASSOC);
-
-            foreach($projects as $p){
-            ?> 
-
-            <li><a href="project.php?id=<?php echo $p['id'] ?>"> <?php echo $p['projectname']?></a></li>
-            <?php
-            }
-            ?>
+            <li><a href="cv.php">Mon CV</a></li>
+            <li><div class="divider"></div></li>
+            <li>
+                <a class="dropdown-trigger" data-beloworigin="true" href="#!" data-target="dropdown3">
+                    Jeux<i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
+            <li><div class="divider"></div></li>
+        
+            <li>
+                <a class="dropdown-trigger" data-beloworigin="true" href="#!" data-target="dropdown4">
+                    Projects<i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
           </ul>
+
+
+          <ul id="dropdown1" class="dropdown-content dropdown-color">
+                
+                <li><a href="games/loadings/loading_blackjack.php">Blackjack</a></li>
+                <li><a href="games/loadings/loading_pendu.php">Pendu</a></li>
+          </ul>
+
+
+          <ul id="dropdown2" class="dropdown-content dropdown-color2">
+                
+                <?php
+                $sql = "SELECT * FROM projects";
+                $pre = $pdo_projects-> prepare($sql);
+                $pre->execute();
+                $pro = $pre->fetchall(PDO::FETCH_ASSOC);
+
+                foreach($pro as $projo){
+                ?> 
+                <li><a href="project.php?id=<?php echo $projo['id'] ?>"><?php echo $projo['projectname']?></a></li>
+                <?php
+                }
+                ?>
+            </ul>
+
+            <ul id="dropdown3" class="dropdown-content dropdown-color">
+                
+                <li><a href="games/loadings/loading_blackjack.php">Blackjack</a></li>
+                <li><a href="games/loadings/loading_pendu.php">Pendu</a></li>
+            </ul>
+
+            <ul id="dropdown4" class="dropdown-content dropdown-color2">
+                
+                <?php
+                $sql = "SELECT * FROM projects";
+                $pre = $pdo_projects-> prepare($sql);
+                $pre->execute();
+                $pros = $pre->fetchall(PDO::FETCH_ASSOC);
+
+                foreach($pros as $projos){
+                ?> 
+                <li><a href="project.php?id=<?php echo $projos['id'] ?>"><?php echo $projos['projectname']?></a></li>
+                <?php
+                }
+                ?>
+            </ul>
+
+
           
           <div class="row">
             <div class="col l6 offset-l3">
@@ -102,7 +157,8 @@
               </div>
               
               
-                <h3>Compétences</h3>   
+                <h3>Compétences</h3> 
+
                 <div id="skills" class="section scrollspy">
                   <ul class="collapsible">
                     <li>

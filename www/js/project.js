@@ -4,6 +4,7 @@
     $('.sidenav').sidenav();
     $('.carousel').carousel();
     $('.collapsible').collapsible();
+    $(".dropdown-trigger").dropdown();
   });
   
   function autoplay() { 

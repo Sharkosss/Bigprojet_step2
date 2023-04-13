@@ -53,7 +53,7 @@
                     </div>
                 </li>
                 <li><a href="index.php">Acceuil</a></li>
-                <li><a href="cv.php">CV</a></li>
+                <li><a href="cv.php"> Mon CV</a></li>
                 <li><div class="divider"></div></li>
                 <li>
                     <a class="dropdown-trigger" data-beloworigin="true" href="#!" data-target="dropdown3">
