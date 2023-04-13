@@ -1,14 +1,14 @@
 body{
-    font-family: 'Righteous', cursive;
+    font-family:  Montserrat;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-nav a.sidenav-trigger{
+/* nav a.sidenav-trigger{
     display: block!important;
-}
+} */
 
 .btncontact{
     box-shadow: none!important;

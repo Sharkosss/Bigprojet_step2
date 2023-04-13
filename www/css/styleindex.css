@@ -73,6 +73,16 @@ footer {
   text-align: center;
 }
 
+
+ul#dropdown1 {
+  background-color:  #212121 !important;
+  
+}
+
+ul#dropdown1 a {
+  color: white !important;
+}
+
 ul#dropdown2 {
   background-color:  #212121 !important;
   
@@ -82,13 +92,23 @@ ul#dropdown2 a {
   color: white !important;
 }
 
-ul#dropdown1 {
-  background-color:  #212121 !important;
+ul#dropdown3 {
+  background-color:  #ffffff !important;
   
 }
 
-ul#dropdown1 a {
-  color: white !important;
+ul#dropdown3 a {
+  color: rgb(0, 0, 0) !important;
+}
+
+
+ul#dropdown4 {
+  background-color:  #ffffff !important;
+  
+}
+
+ul#dropdown4 a {
+  color: rgb(0, 0, 0) !important;
 }
 
 p.grey-text.text-darken-3.lighten-3 {

@@ -2921,7 +2921,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
       _this13.id = _this13.$el.attr('id');
       _this13._openingTrigger = undefined;
-      _this13.$overlay = $('<div class="modal-overlay"></div>');
+      _this13.$overlay = $('<div class="modal"></div>');
       _this13.el.tabIndex = 0;
       _this13._nthModalOpened = 0;
 
@@ -5562,7 +5562,7 @@ $jscomp.polyfill = function (e, r, p, m) {
       value: function _createOverlay() {
         var overlay = document.createElement('div');
         this._closeBound = this.close.bind(this);
-        overlay.classList.add('sidenav-overlay');
+        // overlay.classList.add('sidenav-overlay');
 
         overlay.addEventListener('click', this._closeBound);
 
@@ -5879,7 +5879,7 @@ $jscomp.polyfill = function (e, r, p, m) {
       key: "_createDragTarget",
       value: function _createDragTarget() {
         var dragTarget = document.createElement('div');
-        dragTarget.classList.add('drag-target');
+        // dragTarget.classList.add('drag-target');
         document.body.appendChild(dragTarget);
         this.dragTarget = dragTarget;
       }
