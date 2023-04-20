@@ -1,5 +1,9 @@
 body{
     font-family:  Montserrat;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 html{
@@ -38,23 +42,7 @@ ul#dropdown2 a {
 }
 
 
-.pj1{
-    background-image: url(../img/pj1/bgpj1.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
-.pj2{
-    background-image: url(../img/projet_2/bgpj2.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.pj3{
-    background-image: url(../img/pj3/bgpj3.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 .colornav{
     background-color : #0F0E0E

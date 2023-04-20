@@ -64,9 +64,7 @@
               <div class="background">
                 <img src="img/black.jpg">
               </div>
-              <a href="#user"><img class="circle" src="<?php echo $project["imgintervenant"]?>"></a>
-              <a href="#name"><span class="white-text name"><?php echo $project["nomintervenant"]?></span></a>
-              <a href="#email"><span class="white-text email"><a href="<?php echo $project["linkedinhttps"]?>"><?php echo $project["linkedin"]?></a></span></a>
+              
             </div></li>
             <li><a href="index.php">Acceuil</a></li>
             <li><a href="cv.php">Mon CV</a></li>
@@ -143,7 +141,7 @@
               </div>
 
               <div id="contained" class="section scrollspy">
-                <h2> Le contenue de ce projet </h2>
+                <h2> Contenue de ce projet </h2>
                 <p><?php echo $project["desccont"]?>
                 </p>
                   <div class="carouselturn margincarou">
@@ -192,7 +190,7 @@
               
               <div id="return" class="section scrollspy row ">
                 <div class="col offset-l3">
-                  <h3>Notre retour</h3>
+                  <h3>Mon retour</h3>
                   <p>
                   <?php echo $project["retour"]?>
                   </p>
